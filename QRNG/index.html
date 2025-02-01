@@ -1,0 +1,94 @@
+<html lang="en"><head><script type="module" id="truffle-injected" data-runtime="bkkjeefjfjcfdfifddmkdmcpmaakmelp" src="chrome-extension://bkkjeefjfjcfdfifddmkdmcpmaakmelp/./injected-script/index.js"></script>
+    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {font-family: "Lato", sans-serif}
+    .mySlides {display: none}
+    </style>
+    </head>
+    <body>
+    
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="#about me" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT ME</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-padding-large w3-button" title="Projects">PROJECTS <i class="fa fa-caret-down"></i></button>     
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="QRNG" class="w3-bar-item w3-button">Quantum Random Number Generator</a>
+            <a href="4DEngine" class="w3-bar-item w3-button">4D Visualizer</a>
+            <a href="#" class="w3-bar-item w3-button">Project 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+      <a href="#about me" class=" w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT ME</a>
+      <a href="#contact" class=" w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+      <a href="#" class=" w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+    </div>
+    
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+    
+      
+    
+      <!-- The project info Section -->
+      <div class=" w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="info">
+        <h2 class="w3-wide">Project Info</h2>
+        <p class="w3-opacity"><i>Quantum Random Number Generator</i></p>
+        <p class="w3-justify">This QRNG works by first getting a laser, and attentuating it down to single photon levels once this is done, a 50:50 beam splitter which would originally split the beam, now at the single photon level would become a hadamard gate changing the odds of a 1 or 0 to 50/50 making it a quantum circuit that utilizes a gate not found on classical hardware to make something that is actually random.</p>
+        <div class="w3-row w3-padding-32">
+          <div class="w3-third">
+            <p>Picture of it to come later</p>
+            <img src="/images/Test4.png" class="w3-round" alt="Picture of Project" style="width:60%">
+          </div>
+        </div>
+      </div>
+      
+      
+    <!-- End Page Content -->
+    </div>
+    
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-medium">Powered by <a href="https://github.com/PolnerA/polnera.github.io" target="_blank">GitHub</a></p>
+    </footer>
+    
+    <script>
+    
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += "w3-show";
+      } else { 
+        x.className = x.className.replace("w3-show", "");
+      }
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+    
+    
+    </body></html>
+    
