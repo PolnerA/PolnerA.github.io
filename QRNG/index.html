@@ -1,4 +1,13 @@
-<html lang="en"><head><script type="module" id="truffle-injected" data-runtime="bkkjeefjfjcfdfifddmkdmcpmaakmelp" src="chrome-extension://bkkjeefjfjcfdfifddmkdmcpmaakmelp/./injected-script/index.js"></script>
+<html lang="en"><head><script type="module" id="truffle-injected" data-runtime="bkkjeefjfjcfdfifddmkdmcpmaakmelp" src="chrome-extension://bkkjeefjfjcfdfifddmkdmcpmaakmelp/./injected-script/index.js"></script> 
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax={
+            tex: {
+                inlineMath: [['$','$'], ['\\(', '\\)']]
+            }
+        };
+    {/script}
     <title>My Website</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,7 +55,7 @@
       <div class=" w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="info">
         <h2 class="w3-wide">Project Info</h2>
         <p class="w3-opacity"><i>Quantum Random Number Generator</i></p>
-        <p class="w3-justify">This QRNG works by first getting a laser, and attentuating it down to single photon levels once this is done, a 50:50 beam splitter which would originally split the beam, now at the single photon level would become a hadamard gate changing the odds of a 1 or 0 to 50/50 making it a quantum circuit that utilizes a gate not found on classical hardware to make something that is actually random.</p>
+        <p class="w3-justify">This QRNG works by first getting a laser, and attentuating it down to single photon levels once this is done, a 50:50 beam splitter which would originally split the beam, now at the single photon level would become a hadamard gate changing the odds of a 1 or 0 to 50/50 making it a quantum circuit that utilizes a gate not found on classical hardware to make something that is actually random. \( E = mc^2 \). $ E = mc^2 &</p>
         <div class="w3-row w3-padding-32">
           <div class="w3-third">
             <p>Picture of it to come later</p>
